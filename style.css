@@ -1,3 +1,30 @@
+/* Mes ajouts dekstop */
+
+/* Le text amélioré d'introduction de l'agence amélioré */
+body div.function-text h2 {
+    width: 45rem;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: -1px;
+}
+
+/* La citation img remplacée */
+body div.row.voffset-lg.voffset figure p {
+    width: 66rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
+    font-style: italic;
+    font-family: "Helvetica", "arial";
+}
+
+body div.row.voffset-lg.voffset p {
+    font-size: 13px;
+    font-family: "Helvetica", "arial";
+}
+
+/* Code préétabli */
 body {
     margin: 0;
     padding: 0;
@@ -545,7 +572,7 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-family: "Helvetica", "Arial";
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -656,7 +683,7 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: "Helvetica", "Arial";
     font-weight: 400;
     color: #575757 !important;
 }
@@ -694,7 +721,7 @@ p {
 
 .h1 {
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: "Helvetica", "Arial";
 }
 
 .cta-hero {
@@ -782,7 +809,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C !important;
+    color: rgb(239, 198, 110) !important;
 }
 
 .btn-atomic-tangerine {
