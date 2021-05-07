@@ -1,12 +1,78 @@
 /* Mes ajouts dekstop */
 
-/* Le text amélioré d'introduction de l'agence amélioré */
+/* Gestion du texte img du titre et l'image */
+.flex-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* L'icône du haut s'anime */
+.center-block:hover {
+    transition: 300ms ease-in;
+    transform: scale(1.15)
+}
+
+/* Les icônes de service s'animent */
+body div#bloc-2-services span {
+    transition: 200ms ease-out;
+}
+
+body div#bloc-2-services span:hover {
+    transition: 300ms ease-in;
+    transform: scale(1.15);
+}
+
+body div.page-container div#bloc-0.bloc a.navbar-brand.flex-title h1 {
+    font-family: "Roboto";
+    font-size: 22px;
+    font-style: oblique;
+    position: relative;
+    top: -5px;
+}
+
+body div#bloc-0.bloc nav.navbar.row img {
+    height: 35px;
+}
+
+/* Le texte img d'introduction de l'agence amélioré */
 body div.function-text h2 {
-    width: 45rem;
-    margin: auto;
-    font-size: 20px;
+    width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    font-size: 24px;
     font-weight: bold;
     word-spacing: -1px;
+}
+
+/* Le sous-titre img du haut remanié */
+body .text-center h3 {
+    font-family: "Helvetica", "arial";
+    color: #575757 !important;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 3rem;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remaniement des textes des services */
+body div.page-container div.row.voffset-lg.med-width-whitespace {
+    margin-top: 4rem;
+}
+
+body div.page-container div.row.voffset-lg.med-width-whitespace p {
+    color: #575757 !important;
+    font-size: 17px;
+    line-height: 2.1rem;
+}
+
+/* Le sous-titre img du bas remanié */
+body h2.col-sm-12.text-center {
+    color: #575757 !important;
 }
 
 /* La citation img remplacée */
@@ -24,11 +90,92 @@ body div.row.voffset-lg.voffset p {
     font-family: "Helvetica", "arial";
 }
 
-/* Code préétabli */
+/* Modification des paragraphes du portfolio */
+body div#bloc-4-portfolio p.text-center {
+    font-size: 15px;
+    color: #575757 !important;
+}
+
+/* Adaptation des deux dernières images du portfolio TABLETTE
+body div#bloc-4-portfolio img.img-responsive.portfolio-thumb {
+    height: 57rem;
+    margin-bottom: 6rem;
+} */
+
+/* Le lien sur bouton se comporte différement */
+/* body div#bloc-5-cta a#cta-hero.btn.btn-lg {
+    font-style: normal;
+    text-decoration: none;
+} */
+
+/* Gestion des textes du footer */
+body footer h6.text-center.white {
+    font-size: 15px;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+body footer div.text-center p {
+    font-size: 15px;
+    color: white impor !important;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* Comportement des liens du footer */
+body footer p a {
+    font-style: italic;
+    text-decoration: underline;
+    transition: 400ms ease-out;
+}
+
+body footer p a:hover {
+    opacity: 0.8;
+    transition: 400ms ease-in;
+}
+
+/* Une flexbox pour les réseaux sociaux du footer + gestion icône */
+.align-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+body footer div#bloc-8 a.social span {
+    opacity: 0.8;
+    transition-duration: 300ms;
+}
+
+body footer div#bloc-8.bloc div.align-social a.social span:hover {
+    transform: scale(1.3);
+    opacity: inherit;
+    transition-duration: 300ms;
+}
+
+/* Animation de la navbar */
+html body div.page-container div#bloc-0.bloc.bgc-white.l-bloc div.container.bloc-sm nav.navbar.row div.collapse.navbar-collapse.navbar-1.special-dropdown-nav ul.site-navigation.nav.navbar-nav li a:hover {
+    transform: scale(1.3);
+    opacity: inherit;
+    transition-duration: 300ms;
+}
+
+/* Footer section contact : taille d'écriture des info */
+
+
+
+
+
+/* Code préétabli par l'agence remanié par moments */
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    /* background: #FFF; */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,13 +183,15 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
-    outline: none !important;
+    font-style: italic;
+    text-decoration: underline;
+    transition: 400ms ease-out;
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    transition: 400ms ease-in;
 }
 
 #page-loading-blocs-notifaction {
@@ -127,7 +276,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc button:hover {
@@ -160,7 +309,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
@@ -258,7 +407,9 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;
+    font-style: normal;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -685,7 +836,7 @@ label,
 a {
     font-family: "Helvetica", "Arial";
     font-weight: 400;
-    color: #575757 !important;
+    /* color: #575757 !important; */
 }
 
 .container {
@@ -708,10 +859,6 @@ a {
     font-weight: lighter;
     max-width: 520px;
     margin: auto auto auto auto;
-}
-
-p {
-    font-size: 11px;
 }
 
 .tight-width-whitespace {
@@ -751,7 +898,7 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 750px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -800,26 +947,36 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
+/* .bgc-dark-slate-blue {
     background-color: #364577;
-}
+} */
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: rgb(145, 59, 19);
+    opacity: inherit;
 }
 
 .tc-white {
     color: rgb(239, 198, 110) !important;
 }
 
+body h5.text-center.tc-white {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF !important;
+    background-color: rgb(145, 59, 19);
+    font-style: normal;
+    text-decoration: none;
+    transition: 400ms ease-in;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956 !important;
-    color: #FFFFFF !important;
+    opacity: 0.85;
+    transform: scale(1.1);
+    box-shadow: 6px 6px 6px rgba(10, 10, 10, 0.3);
+    transition: 400ms ease-out;
 }
 
 .ltc-white {
@@ -856,7 +1013,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {

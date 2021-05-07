@@ -103,6 +103,7 @@ sub {
 }
 
 img {
+    transition: 200ms ease-out;
     border: 0
 }
 
@@ -1548,7 +1549,7 @@ h1,
 h2,
 h3 {
     margin-top: 20px;
-    margin-bottom: 10px
+    /* margin-bottom: 10px */
 }
 
 .h1 .small,
@@ -7682,7 +7683,6 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
