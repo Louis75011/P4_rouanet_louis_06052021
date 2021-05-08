@@ -71,9 +71,19 @@ body div.page-container div.row.voffset-lg.med-width-whitespace p {
 }
 
 /* Le sous-titre img du bas remanié */
-body h2.col-sm-12.text-center {
+body h5.col-sm-12.text-center {
     color: #575757 !important;
+    font-size: 30px;
 }
+
+/* Titre des articles du portfolio */
+body div.page-container div#bloc-4-portfolio .portfolio-row div.col-sm-6 h5.mg-md.text-center {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333 !important;
+}
+
 
 /* La citation img remplacée */
 body div.row.voffset-lg.voffset figure p {
@@ -885,7 +895,7 @@ a {
     margin: auto auto auto auto;
 }
 
-h2 {
+h4 {
     font-size: 22px;
     line-height: 1.4em;
 }
@@ -960,7 +970,7 @@ h4 {
     color: rgb(239, 198, 110) !important;
 }
 
-body h5.text-center.tc-white {
+body h6.text-center.tc-white {
     font-weight: bold;
     font-size: 22px;
 }
