@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Correction de la langue interprétée -->
 <html lang="fr">
 
 <head>
@@ -12,7 +13,9 @@
 		content="La chouette agence, entreprise web design à Lyon, celle-ci conseille et appuie toutes les entreprises afin de les aider à réaliser leur projet futur.">
 	<!-- Balise d'adaptation du responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<!--Facebook Open graph-->
+	<!-- Autoriser l'indexation pour les moteurs de recherche -->
+	<meta name="robots" content="index, follow">
+	<!--FaceBook Open graph-->
 	<meta property="og:locale" content="fr_FR">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="La chouette agence | Entreprise Web design à Lyon.">
@@ -38,21 +41,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<!-- Liens des fichiers JS -->
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
-	<!-- Analytics -->
-	<!-- Analytics END -->
 </head>
 
 <body>
-	<!-- Principal conteneur -->
+	<!-- Conteneur entier -->
 	<div class="page-container">
 
-		<!-- 0) Bloc de la navbar -->
+		<!-- Bloc de la navbar -->
 		<div class="bloc bgc-white l-bloc " id="bloc-0">
 			<div class="container bloc-sm">
 
@@ -86,30 +81,33 @@
 			</div>
 		</div>
 	</div>
-	<!-- 0) Bloc de la navbar END -->
 
-		<!-- bloc-6 -->
-		<main>
-		<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-			<div class="container bloc-lg">
-				<div class="row">
-					<div class="col-sm-12">
-						<h2 class="text-center hero-bloc-text tc-white">
-							Parlons web design !
-						</h2>
-						<p class="text-center mg-lg tc-white tight-width-whitespace">
-							Nous sommes ravis que vous souhaitiez collaborer avec notre agence de web design lyonnaise.<br>
-							Décrivez-nous votre projet de façon précise en complétant le formulaire ci-dessous.<br>
-							C'est avec un véritable plaisir que nous vous répondrons au plus vite afin de commencer à donner vie à vos projets. 
-						</p>
+	<!-- bloc principal -->
+	<main>
+		<section>
+			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+				id="bloc-6">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="text-center hero-bloc-text tc-white">
+								Parlons web design !
+							</h2>
+							<p class="text-center mg-lg tc-white tight-width-whitespace">
+								Nous sommes ravis que vous souhaitiez collaborer avec notre agence de web design
+								lyonnaise.<br>
+								Décrivez-nous votre projet de façon précise en complétant le formulaire ci-dessous.<br>
+								C'est avec un véritable plaisir que nous vous répondrons au plus vite afin de commencer
+								à
+								donner vie à vos projets.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- bloc-6 END -->
+		</section>
 
-		<!-- bloc-7 -->
-		<!-- Retouche du formulaire pour le faire fonctionner -->
+		<!-- Bloc de retouche du formulaire pour le faire fonctionner -->
 		<div class="bloc bgc-white l-bloc" id="bloc-7">
 			<div class="container bloc-lg">
 				<div class="row">
@@ -149,67 +147,74 @@
 							</button>
 						</form>
 					</div>
-					<div class="text-center">
-						<p class="text-center">
-							contact@lachouetteagence.com<br>
-							2 place Sathonay 69001 Lyon<br>
-							Ouvert de 9h à 18h, du lundi au vendredi
-						</p>
-					</div>
+					<aside>
+						<div class="text-center">
+							<p class="text-center">
+								contact@lachouetteagence.com<br>
+								2 place Sathonay 69001 Lyon<br>
+								Ouvert de 9h à 18h, du lundi au vendredi
+							</p>
+						</div>
+					</aside>
 				</div>
 			</div>
 		</div>
-		
-							<!-- Suppression du bouton JS non nécessaire et non fonctionnel ? -->
-							<!-- <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+	</main>
+	<!-- Suppression du bouton JS non nécessaire et non fonctionnel ? -->
+	<!-- <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
 							class="fa fa-chevron-up"></span></a> -->
 
-		<!-- Correction du footer hors de sa balise -->
-		<footer>
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-				<div class="container bloc-sm">
-					<div class="row">
-						<div class="col-sm-12">
-							<h5 class="text-center white" style="word-spacing: 1px;">
-								<strong>La chouette agence - Agence de web design basée à Lyon</strong>
-							</h5>
-							<div class="align-social">
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-									</div>
+	<!-- Correction du footer hors de sa balise -->
+	<footer>
+		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<div class="container bloc-sm">
+				<div class="row">
+					<div class="col-sm-12">
+						<h5 class="text-center white" style="word-spacing: 1px;">
+							<strong>La chouette agence - Agence de web design basée à Lyon</strong>
+						</h5>
+						<div class="align-social">
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
 								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-									</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
 								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-									</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
 								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span
-												class="fa fa-instagram icon-md"></span></a>
-									</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span
+											class="fa fa-instagram icon-md"></span></a>
 								</div>
+							</div>
 							<!-- Suppression des keywords apparanté à du Black Hat -->
-							</div>
-							<div class="text-center">
-								<p>Partenaires : <a href="https://www.lyon.fr/" title="Accueil - Ville de Lyon">Ville de
-										Lyon</a></p>
-								<p>Secteurs d'activité : <em>Grande Presse | Photographie | Vacance | Mariage</em></p>
-							</div>
+						</div>
+						<div class="text-center">
+							<p>Partenaires : <a href="https://www.lyon.fr/" title="Accueil - Ville de Lyon">Ville de
+									Lyon</a> | <a href="https://www.france-webdesign.com/">France Web-Design</a>
+							</p>
+							<p>Catégories : <em>Grande Presse | Photographie | Vacance | Mariage</em></p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-	<!-- Principal conteneur END -->
+		</div>
+	</footer>
 
-
+	<!-- Déplacement des liens des fichiers JS -->
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>
 </body>
 
 </html>

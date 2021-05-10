@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Correction de la langue interprétée -->
 <html lang="fr">
 
 <head>
@@ -12,7 +13,9 @@
 		content="La chouette agence, entreprise de web design à Lyon, celle-ci conseille et appuie toutes les entreprises afin de les aider à réaliser leur projet numérique.">
 	<!-- Balise d'adaptation du responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<!--Open graph-->
+	<!-- Autoriser l'indexation pour les moteurs de recherche -->
+	<meta name="robots" content="index, follow">
+	<!--FaceBook Open graph-->
 	<meta property="og:locale" content="fr_FR">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="La chouette agence | Entreprise Web design à Lyon.">
@@ -20,13 +23,15 @@
 	<meta property="og:description"
 		content="Réalisez votre site internet grâce à l'agence experte en web design La chouette agence située à Lyon">
 	<meta property="og:site_name" content="La chouette agence - Agence web design à Lyon">
-	<!--Open graph END-->
+	<!--FaceBook Open graph END-->
 	<!--Twitter cards-->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@Lachouetteagence">
 	<meta name="twitter:description"
 		content="La chouette agence, entreprise web design à Lyon, celle-ci conseille et appuie toutes les entreprises afin de les aider à réaliser leur projet futur.">
 	<meta name="twitter:title" content="La chouette agence | Entreprise Web design à Lyon.">
+	<!-- La balise unique dite canonicale recommandée pour l'indexation -->
+	<link rel="canonical" href="https://github.com/Florian75011/P4_rouanet_florian_06052021/blob/main/index.html" />
 	<!-- Lien de l'icône du site -->
 	<link rel="shortcut icon" type="image/png" href="./img/favicon.png">
 	<!-- Ajout d'une police bien lisible pour le titre -->
@@ -39,12 +44,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<!-- Liens des fichiers JS -->
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
-	<!-- <script src="./js/gmaps.js"></script> -->
 	<!-- Analytics -->
 	<!-- Analytics END -->
 </head>
@@ -60,7 +59,7 @@
 				<nav class="navbar row">
 					<div class="navbar-header">
 						<!-- Suppression des keywords apparanté à du Black Hat -->
-						<!-- Choix de mots connus et de longue traîne dans les alt -->
+						<!-- Choix de mots généralistes et de longue traîne dans les alt -->
 						<a class="navbar-brand flex-title" href="index.html"><img src="img/la-chouette-agence.png"
 								title="banière de l'agence" alt="la chouette agence, lyon web design, meilleure agence">
 							<h1>La chouette agence</h1>
@@ -322,12 +321,12 @@
 											class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
-						<!-- Suppression des keywords apparanté à du Black Hat -->
+							<!-- Suppression des keywords apparanté à du Black Hat -->
 						</div>
 						<div class="text-center">
 							<p>Partenaires : <a href="https://www.lyon.fr/" title="Accueil - Ville de Lyon">Ville de
-									Lyon</a></p>
-							<p>Secteurs d'activité : <em>Grande Presse | Photographie | Vacance | Mariage</em></p>
+									Lyon</a> | <a href="https://www.france-webdesign.com/">France Web-Design</a> </p>
+							<p>Catégories : <em>Grande Presse | Photographie | Vacance | Mariage</em></p>
 						</div>
 					</div>
 				</div>
@@ -335,6 +334,13 @@
 		</div>
 	</footer>
 	<!-- 6) Bloc d'informations du footer END -->
+
+	<!-- Déplacement des liens des fichiers JS -->
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>
 </body>
 
 </html>

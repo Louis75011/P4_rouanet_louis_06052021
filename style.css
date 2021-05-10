@@ -164,19 +164,22 @@ html body div.page-container div#bloc-0.bloc.bgc-white.l-bloc div.container.bloc
 }
 
 /* Contact: formulaire et texte centrés */
-html body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.text-center p.text-center {
+body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.text-center p.text-center {
     font-weight: bold;
     color: black;
+    line-height: 5.5rem;
+    font-size: 15px;
+    margin-top: 10rem;
 }
 
 /* Correction du responsive mobile */
 @media screen and (max-width: 940px) {
     body div#bloc-4-portfolio div.col-sm-6 a img.img-responsive.portfolio-thumb {
-        width: 135%;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
     body div#bloc-5-cta.bloc div.row h6.col-sm-12.mg-md.text-center.tc-white {
         font-size: 19px;
     }
@@ -184,9 +187,14 @@ html body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row di
     body div#bloc-2-services .col-md-offset-2.text-center figure p {
         width: 100%;
     }
+
+    body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.text-center p.text-center {
+        line-height: 4.5rem;
+        margin-top: 3rem;
+    }
 }
 
-/* Code préétabli par l'agence remanié par moments */
+/* Code préétabli par l'agence et remanié par moments */
 body {
     margin: 0;
     padding: 0;
