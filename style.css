@@ -37,7 +37,7 @@ body div#bloc-0.bloc nav.navbar.row img {
 
 /* Le texte img d'introduction de l'agence amélioré */
 body div.function-text h2 {
-    width: 48rem;
+    /* width: 48rem; */
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
@@ -77,13 +77,12 @@ body h5.col-sm-12.text-center {
 }
 
 /* Titre des articles du portfolio */
-body div.page-container div#bloc-4-portfolio .portfolio-row div.col-sm-6 h5.mg-md.text-center {
+body div#bloc-4-portfolio div.container.bloc-lg .portfolio-row div.col-sm-6 h5 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333 !important;
 }
-
 
 /* La citation img remplacée */
 body div.row.voffset-lg.voffset figure p {
@@ -95,7 +94,8 @@ body div.row.voffset-lg.voffset figure p {
     font-family: "Helvetica", "arial";
 }
 
-body div.row.voffset-lg.voffset p {
+body div.row.voffset-lg.voffset p,
+.treize {
     font-size: 13px;
     font-family: "Helvetica", "arial";
 }
@@ -105,18 +105,6 @@ body div#bloc-4-portfolio p.text-center {
     font-size: 15px;
     color: #575757 !important;
 }
-
-/* Adaptation des deux dernières images du portfolio TABLETTE
-body div#bloc-4-portfolio img.img-responsive.portfolio-thumb {
-    height: 57rem;
-    margin-bottom: 6rem;
-} */
-
-/* Le lien sur bouton se comporte différement */
-/* body div#bloc-5-cta a#cta-hero.btn.btn-lg {
-    font-style: normal;
-    text-decoration: none;
-} */
 
 /* Gestion des textes du footer */
 body footer h6.text-center.white {
@@ -175,11 +163,28 @@ html body div.page-container div#bloc-0.bloc.bgc-white.l-bloc div.container.bloc
     transition-duration: 300ms;
 }
 
-/* Footer section contact : taille d'écriture des info */
+/* Contact: formulaire et texte centrés */
+html body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.text-center p.text-center {
+    font-weight: bold;
+    color: black;
+}
 
+/* Correction du responsive mobile */
+@media screen and (max-width: 940px) {
+    body div#bloc-4-portfolio div.col-sm-6 a img.img-responsive.portfolio-thumb {
+        width: 135%;
+    }
+}
 
+@media screen and (max-width: 640px) {
+    body div#bloc-5-cta.bloc div.row h6.col-sm-12.mg-md.text-center.tc-white {
+        font-size: 19px;
+    }
 
-
+    body div#bloc-2-services .col-md-offset-2.text-center figure p {
+        width: 100%;
+    }
+}
 
 /* Code préétabli par l'agence remanié par moments */
 body {
@@ -972,7 +977,7 @@ h4 {
 
 body h6.text-center.tc-white {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .btn-atomic-tangerine {
