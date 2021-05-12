@@ -1,4 +1,4 @@
-/* Mes ajouts dekstop */
+/* 1) Mes ajouts dekstop */
 
 /* Gestion du texte img du titre et l'image */
 .flex-title {
@@ -32,7 +32,7 @@ body div.page-container div#bloc-0.bloc a.navbar-brand.flex-title h1 {
 }
 
 body div#bloc-0.bloc nav.navbar.row img {
-    height: 35px;
+    height: 78px;
 }
 
 /* Le texte img d'introduction de l'agence amélioré */
@@ -198,7 +198,7 @@ body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.tex
     }
 }
 
-/* Code préétabli par l'agence et remanié par moments */
+/* 2) établi par l'agence et remanié par moments */
 body {
     margin: 0;
     padding: 0;
@@ -288,19 +288,8 @@ a:hover {
     color: rgba(255, 255, 255, .9);
 }
 
-.d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
+/* Nous n'avons pas besoin d'autant de specification pour la gestion du blanc */
 .d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
-.d-bloc h1 a,
-.d-bloc h2 a,
-.d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
 .d-bloc p a {
     color: rgb(255, 255, 255);
 }
