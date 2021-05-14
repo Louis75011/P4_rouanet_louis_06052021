@@ -196,6 +196,11 @@ body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.tex
     body div.page-container div#bloc-0.bloc.bgc-white.l-bloc nav.navbar.row .special-dropdown-nav ul.site-navigation.nav.navbar-nav li a:hover {
         transform: inherit;
     }
+
+    .texture-paper::before {
+        background: url(img/texture-paper.png);
+        background-size: 160px 160px;
+    }
 }
 
 /* 2) établi par l'agence et remanié par moments */
