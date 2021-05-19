@@ -172,37 +172,6 @@ body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.tex
     margin-top: 10rem;
 }
 
-/* Correction du responsive tablette & mobile */
-@media screen and (max-width: 940px) {
-    body div#bloc-4-portfolio div.col-sm-6 a img.img-responsive.portfolio-thumb {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 740px) {
-    body div#bloc-5-cta.bloc div.row h6.col-sm-12.mg-md.text-center.tc-white {
-        font-size: 19px;
-    }
-
-    body div#bloc-2-services .col-md-offset-2.text-center figure p {
-        width: 100%;
-    }
-
-    body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.text-center p.text-center {
-        line-height: 4.5rem;
-        margin-top: 3rem;
-    }
-
-    body div.page-container div#bloc-0.bloc.bgc-white.l-bloc nav.navbar.row .special-dropdown-nav ul.site-navigation.nav.navbar-nav li a:hover {
-        transform: inherit;
-    }
-
-    .texture-paper::before {
-        background: url(img/texture-paper.png);
-        background-size: 160px 160px;
-    }
-}
-
 /* 2) établi par l'agence et remanié par moments */
 body {
     margin: 0;
@@ -260,10 +229,6 @@ a:hover {
 
 .bg-repeat {
     background: repeat;
-}
-
-.bg-t-edge {
-    background: top no-repeat;
 }
 
 .bloc-bg-texture::before {
@@ -945,7 +910,7 @@ body h6.text-center.tc-white {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -980,6 +945,7 @@ body h6.text-center.tc-white {
 
     .b-parallax {
         background-attachment: scroll;
+        height: 64rem;
     }
 
     .page-container,
@@ -1171,5 +1137,40 @@ body h6.text-center.tc-white {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+/* 3) Correction du responsive tablette & mobile */
+@media screen and (max-width: 980px) {
+    body div#bloc-4-portfolio div.col-sm-6 a img.img-responsive.portfolio-thumb {
+        width: 100%;
+    }
+
+    .b-parallax {
+        height: 34rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    body div#bloc-5-cta.bloc div.row h6.col-sm-12.mg-md.text-center.tc-white {
+        font-size: 19px;
+    }
+
+    body div#bloc-2-services .col-md-offset-2.text-center figure p {
+        width: 100%;
+    }
+
+    body main div#bloc-7.bloc.bgc-white.l-bloc div.container.bloc-lg div.row div.text-center p.text-center {
+        line-height: 4.5rem;
+        margin-top: 3rem;
+    }
+
+    body div.page-container div#bloc-0.bloc.bgc-white.l-bloc nav.navbar.row .special-dropdown-nav ul.site-navigation.nav.navbar-nav li a:hover {
+        transform: inherit;
+    }
+
+    .texture-paper::before {
+        background: url(img/texture-paper.png);
+        background-size: 160px 160px;
     }
 }
